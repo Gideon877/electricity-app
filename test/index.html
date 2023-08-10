@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Electricity App Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script src="../electricity.js" charset="utf-8"></script>
+    <script src="./electricity.test.js" charset="utf-8"></script>
+	
+    <script>
+        jest.setTimeout(10000); // Set a timeout for tests if needed
+        jest.run();
+    </script>
+</body>
+
+</html>

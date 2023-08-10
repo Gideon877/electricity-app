@@ -1,0 +1,59 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: darkgray
+}
+
+
+.count {
+	font-size: 4em;
+	padding: 0.1em;
+	border: 2px solid;
+	background-color: orchid;
+	border-radius: 0.1em;
+}
+
+.heading {
+	display: inline;
+}
+
+.section {
+	flex: 1;
+	background-color: #FFBF00;
+	padding: 2em;
+	margin: 1em;
+	border-radius: 0.5em;
+}
+
+button {
+
+	padding: 1em;
+	border-radius: 0.5em;
+	font-weight: bold;
+}
+
+.total {
+    font-weight: bold   ;
+}
+
+.mt1 {
+	margin-top: 1em;
+}
+
+.mt2 {
+	margin-top: 2em;
+}
+
+.unitsAvailable {
+	font-size: 200%;
+}
+
+.hidden {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.sections {
+		display: flex;
+	}
+}
+
