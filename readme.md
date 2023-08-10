@@ -1,4 +1,5 @@
 # Alpine.js Counter App
+[![Node.js CI](https://github.com/Gideon877/electricity-app/actions/workflows/node.js.yml/badge.svg)](https://github.com/Gideon877/electricity-app/actions/workflows/node.js.yml)
 
 This is a simple counter app built using Alpine.js, a minimal framework for composing JavaScript behavior in your HTML.
 
