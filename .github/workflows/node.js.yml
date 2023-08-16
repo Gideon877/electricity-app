@@ -30,4 +30,7 @@ jobs:
       run: npm install
 
     - name: Run Jest tests
-      run: npm test
+      run: npm test/electricity.test.js
+    
+    - name: Run Jest Puppeteer tests
+      run: npx jest 
