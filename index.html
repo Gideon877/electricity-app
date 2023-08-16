@@ -15,16 +15,16 @@
 <body x-data="data">
 
     <h1 class="heading">Electricity App</h1>
-    <img src="public/img/electricity.png" alt="" width="45">
+    <img src="/img/electricity.png" alt="" width="45">
 
     <div class="sections">
 
         <div class="section">
             <h2>Top-up electricity</h2>
-            <img src="public/img/transfer.png" alt="" width="50">
-            <img src="public/img/electricity.png" alt="" width="45">
+            <img src="/img/transfer.png" alt="" width="50">
+            <img src="/img/electricity.png" alt="" width="45">
             <!--
-            <img src="public/img/queue.png" alt="" width="100"> -->
+            <img src="/img/queue.png" alt="" width="100"> -->
 
             <div>
                 <input type="radio" class="topup" id="ten" name="buyElectricity" x-model="amountType" value="10" > 
@@ -46,7 +46,7 @@
             </div>
 
             <button @click="buy" class="btn topupNow mt1">Buy 
-                <img src="public/img/electricity.png" alt="" width="25">
+                <img src="/img/electricity.png" alt="" width="25">
             </button>
 
         </div>
@@ -54,7 +54,7 @@
         <div class="section">
             <h2>Electricity</h2>
 
-            <img src="public/img/dashboard.png" alt="" width="50">
+            <img src="/img/dashboard.png" alt="" width="50">
 
             <table>
                 <tr>
@@ -88,7 +88,7 @@
                         Advance taken
                     </td>
                     <td>
-                        <img x-show="advanceTaken" src="public/img/check.png" alt="" width="30" class="advanceTaken " >
+                        <img x-show="advanceTaken" src="/img/check.png" alt="" width="30" class="advanceTaken " >
                     </td>
                 </tr>
 
@@ -112,25 +112,25 @@
             
             <div>
                 <input type="radio" x-model="usage" class="usage" id="stove" name="useElectricity" value="Stove" >
-                <label for="Stove">  <img src="public/img/gas-stove.png" alt="" width="50"> </label>
+                <label for="Stove">  <img src="/img/gas-stove.png" alt="" width="50"> </label>
            
                 <input type="radio" x-model="usage"  class="usage" id="tv"  name="useElectricity" value="TV" >
-                <label for="tv"><img src="public/img/television.png" alt="" width="50"></label>
+                <label for="tv"><img src="/img/television.png" alt="" width="50"></label>
             </div>
             
             <div>
                 <input type="radio" x-model="usage"  class="usage" id="fridge" name="useElectricity" value="Fridge" >
                 <label for="fridge">
-                    <img src="public/img/fridge.png" alt="" width="50">
+                    <img src="/img/fridge.png" alt="" width="50">
                 </label>
                 <input type="radio" x-model="usage"  class="usage" id="kettle" name="useElectricity" value="Kettle" > 
                 <label for="kettle">
-                    <img src="public/img/kettle.png" alt="" width="50">
+                    <img src="/img/kettle.png" alt="" width="50">
                 </label>
             </div>
  
             <button @click="use" class="btn useNow mt1">Use
-                <img src="public/img/electricity.png" alt="" width="25">
+                <img src="/img/electricity.png" alt="" width="25">
             </button>
 
             <span x-text="usage" >0</span>
