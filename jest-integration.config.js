@@ -1,5 +1,5 @@
 export default {
     preset: 'jest-puppeteer',
-    rootDir: 'integration',
+    rootDir: 'test',
     testRegex: './*\\.spec\\.(js|tsx?)$',
   }
