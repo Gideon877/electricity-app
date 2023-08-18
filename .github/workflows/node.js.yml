@@ -41,5 +41,8 @@ jobs:
           branch: gh-pages
           folder: dist
 
-      - name: Run tests
+      - name: Run Jest tests
         run: npm run test
+
+    env:
+      APP_URL: https://gideon877.github.io/electricity-app/

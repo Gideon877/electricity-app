@@ -13,7 +13,7 @@ export class Electricity {
 	}
 
 	/**
-	 * Top-up electricity based on the given amount or use advance if amount is 'advance'.
+	 * @description Top-up electricity based on the given amount or use advance if amount is 'advance'.
 	 * @param {number|string} amount - The amount to top-up or 'advance' to use the advance.
 	 */
 	topUpElectricity(amount) {

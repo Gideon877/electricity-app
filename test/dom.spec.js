@@ -11,7 +11,7 @@ describe(
 		let page;
 		beforeAll(async () => {
 			page = await globalThis.__BROWSER_GLOBAL__.newPage();
-			await page.goto('http://localhost:5173/');
+			await page.goto(process.env.APP_URL || 'http://localhost:5173/');
 		}, timeout);
 
 
