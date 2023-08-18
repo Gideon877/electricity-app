@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14 # Change this to your desired Node.js version
+          node-version: 19
 
       - name: Get npm cache directory path
         id: npm-cache-dir-path
@@ -31,6 +31,15 @@ jobs:
 
       - name: Install deps
         run: npm install
+        
+      - name: Build project
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.3
+        with:
+          branch: gh-pages
+          folder: dist
 
       - name: Run tests
-        run: npm run test:integration # Change this to your test script
+        run: npm run test
