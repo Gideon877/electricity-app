@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest",
-    "test:integration": "jest -c jest-integration.config.js"
+    "test:integration": "vite && jest -c jest-integration.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.22.10",
